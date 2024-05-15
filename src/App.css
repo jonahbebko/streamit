@@ -8,7 +8,7 @@
 
 .App-header {
   display: flex;
-  min-width: 250px;
+  min-width: 300px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -21,8 +21,44 @@
 }
 
 .App-header-home {
-  margin: 15px 5px 5px 15px;
-  flex-grow: 1;
+  display: flex;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  margin: 10px 0 5px 15px;
+  height: 85px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.App-header-home > img {
+  position: absolute;
+  left: 43px;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  animation: spin 5s infinite ease-in-out;
+  -webkit-animation: spin 5s infinite ease-in-out;
+  -moz-animation: spin 5s infinite ease-in-out;
+}
+
+.App-header-home > h1 {
+  position: absolute;
+  left: 108px;
+  top: 18px;
+  margin: 0 10px 0 0;
+  font-size: 26px;
+}
+
+.App-header-home > p {
+  position: absolute;
+  left: 108px;
+  bottom: 18px;
+  margin: 0;
+  font-size: 14px;
 }
 
 .App-header-library {
@@ -30,7 +66,7 @@
   flex-direction: column;
   margin: 10px 5px 15px 15px;
   justify-content: space-between;
-  flex-grow: 4;
+  flex-grow: 1;
 }
 
 .App-body {
@@ -46,26 +82,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.App-body-logos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin: 10px;
-}
-
-.App-body-logos > img {
-  width: 90px;
-  height: 90px;
-  animation: spin 5s ease-in-out infinite;
-  -webkit-animation: spin 5s ease-in-out infinite;
-  -moz-animation: spin 5s ease-in-out infinite;
-}
-
-.App-body-logos > h1 {
-  margin: 0;
 }
 
 @keyframes rainbow {
