@@ -8,16 +8,9 @@
 
 .App-header {
   display: flex;
-  min-width: 300px;
+  width: 260px;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.App-header > div {
-  border-radius: 20px;
-  background-color: rgb(18, 21, 26);
-  align-items: center;
-  text-align: center;
 }
 
 .App-header-top {
@@ -32,11 +25,13 @@
   flex-direction: row;
   gap: 10px;
   margin: 10px;
+  border-radius: 20px;
+  background-color: rgb(18, 21, 26);
 }
 
 .App-header-top > img {
   position: absolute;
-  left: 43px;
+  left: 23px;
   margin: 0;
   width: 60px;
   height: 60px;
@@ -47,7 +42,7 @@
 
 .App-header-top > h1 {
   position: absolute;
-  left: 108px;
+  left: 88px;
   top: 18px;
   margin: 0 10px 0 0;
   font-size: 26px;
@@ -55,7 +50,7 @@
 
 .App-header-top > p {
   position: absolute;
-  left: 108px;
+  left: 88px;
   bottom: 18px;
   margin: 0;
   font-size: 14px;
@@ -65,8 +60,28 @@
   display: flex;
   flex-direction: column;
   margin: 10px 5px 15px 15px;
-  justify-content: space-between;
+  padding: 15px;
+  align-items: flex-start;
+  justify-content: stretch;
   flex-grow: 1;
+  text-wrap: wrap;
+  border-radius: 20px;
+  background-color: rgb(18, 21, 26);
+}
+
+.App-header-bottom > button {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: left;
+  flex-direction: row;
+  padding: 12px;
+  gap: 15px;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  color: rgb(167, 167, 167);
 }
 
 .App-body {
@@ -82,6 +97,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 80
 }
 
 @keyframes rainbow {

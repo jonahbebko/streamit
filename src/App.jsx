@@ -1,12 +1,49 @@
 import './App.css'
+import { useState } from 'react'
 import PWAPrompt from 'react-ios-pwa-prompt'
+import Welcome from './pages/Welcome'
+import Home from './pages/Home'
+import Search from './pages/Search'
+import Settings from './pages/Settings'
 
 function App() {
+
   if (window.matchMedia('(display-mode: standalone)').matches) {
     console.log('PWA is running in standalone mode');
   } else {
     console.log('PWA is running in browser window');
   }
+
+  const [welcome, setWelcome] = useState(true);
+  const [home, setHome] = useState(false);
+  const [search, setSearch] = useState(false);
+  const [settings, setSettings] = useState(false);
+
+  const rsetWelcome = () => {
+    setWelcome(true);
+    setHome(false);
+    setSearch(false);
+    setSettings(false);
+  }
+  const rsetHome = () => {
+    setWelcome(false);
+    setHome(true);
+    setSearch(false);
+    setSettings(false);
+  }
+  const rsetSearch = () => {
+    setWelcome(false);
+    setHome(false);
+    setSearch(true);
+    setSettings(false);
+  }
+  const rsetSettings = () => {
+    setWelcome(false);
+    setHome(false);
+    setSearch(false);
+    setSettings(true);
+  }
+
   return (
     <>
       <PWAPrompt
@@ -16,23 +53,31 @@ function App() {
         copyClosePrompt="Close" />
       <div className="App-root">
         <div className="App-header">
-          <div className="App-header-top">
+          <div className="App-header-top" onClick={rsetWelcome}>
             <img src="logot512.png" alt="logo" />
             <h1>streamit!</h1>
             <p>pre-alpha 0.1.0</p>
           </div>
           <div className="App-header-bottom">
-            <p>there will be things here... eventually</p>
-            <p>(no peeking!)</p>
+            <button className="Banner-Home" style={{color: home ? "white" : "grey"}} onClick={rsetHome}>
+              <span class="material-symbols-outlined">home</span>
+              <p>home</p>
+            </button>
+            <button className="Banner-Search" style={{color: search ? "white" : "grey"}} onClick={rsetSearch}>
+              <span class="material-symbols-outlined">search</span>
+              <p>search</p>
+            </button>
+            <button className="Banner-Settings" style={{color: settings ? "white" : "grey"}} onClick={rsetSettings}>
+              <span class="material-symbols-outlined">settings</span>
+              <p>settings</p>
+            </button>
           </div>
         </div>
         <div className="App-body">
-          <h1>hello</h1>
-          <p>this project is undergoing a complete rebuild from the ground up,<br />
-          mostly due to the abandonment of <code>create-react-app</code> which made<br />
-          lots of problems with PWA caching and using new packages. however, I kept<br />
-          most of the important scripting stuff, so the streamit! you know and love<br />
-          should be back in a few days. check back for updates! <code>\(^o^)/</code></p>
+          {welcome ? <Welcome /> : null}
+          {home ? <Home /> : null}
+          {search ? <Search /> : null}
+          {settings ? <Settings /> : null}
         </div>
       </div>
     </>
