@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.App-header-home {
+.App-header-top {
   display: flex;
   position: relative;
   left: 5px;
@@ -34,7 +34,7 @@
   margin: 10px;
 }
 
-.App-header-home > img {
+.App-header-top > img {
   position: absolute;
   left: 43px;
   margin: 0;
@@ -45,7 +45,7 @@
   -moz-animation: spin 5s infinite ease-in-out;
 }
 
-.App-header-home > h1 {
+.App-header-top > h1 {
   position: absolute;
   left: 108px;
   top: 18px;
@@ -53,7 +53,7 @@
   font-size: 26px;
 }
 
-.App-header-home > p {
+.App-header-top > p {
   position: absolute;
   left: 108px;
   bottom: 18px;
@@ -61,7 +61,7 @@
   font-size: 14px;
 }
 
-.App-header-library {
+.App-header-bottom {
   display: flex;
   flex-direction: column;
   margin: 10px 5px 15px 15px;

@@ -16,13 +16,13 @@ function App() {
         copyClosePrompt="Close" />
       <div className="App-root">
         <div className="App-header">
-          <div className="App-header-home">
+          <div className="App-header-top">
             <img src="logot512.png" alt="logo" />
             <h1>streamit!</h1>
             <p>pre-alpha 0.1.0</p>
           </div>
-          <div className="App-header-library">
-            <p>App-header-library</p>
+          <div className="App-header-bottom">
+            <p>there will be things here... eventually</p>
             <p>(no peeking!)</p>
           </div>
         </div>
