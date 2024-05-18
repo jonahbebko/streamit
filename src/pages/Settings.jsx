@@ -1,6 +1,8 @@
+import './Settings.css'
+
 function Settings() {
     return (
-        <div className="Settings">
+        <div className='Settings'>
             <h1>Settings</h1>
             <p>poop</p>
         </div>
