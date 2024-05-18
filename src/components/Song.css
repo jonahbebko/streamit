@@ -1,0 +1,27 @@
+.song {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.song > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15px;
+    min-width: 450px;
+}
+
+.song > img {
+    object-fit: cover;
+    height: 90px;
+    width: 160px;
+    border-radius: 20px;
+}
+
+.song > div > h3 {
+    margin: 0;
+}
