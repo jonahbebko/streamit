@@ -1,0 +1,40 @@
+.Search {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.song-searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.song-input {
+    padding: 12px 22px;
+    text-align: left;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: rgba(18, 21, 26, 0.8);
+    font-size: 16px;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.song-submit-button {
+    background-color: rgb(18, 21, 26);
+    padding: 12px;
+    border: 0px;
+    border-radius: 20px;
+    width: 90px;
+    font-weight: 500;
+    font-size: 16px;
+}
