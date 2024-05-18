@@ -89,13 +89,14 @@
   flex-grow: 1;
   flex-direction: column;
   margin: 15px 15px 15px 10px;
+  padding: 20px;
   border-radius: 20px;
   background: linear-gradient(transparent, rgb(12, 14, 17));
   animation: rainbow 20s infinite;
   -webkit-animation: rainbow 20s infinite;
   -moz-animation: rainbow 20s infinite;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   text-align: center;
 }
 
