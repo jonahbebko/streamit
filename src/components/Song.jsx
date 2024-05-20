@@ -8,7 +8,7 @@ class Song extends React.Component{
             <div className='song'>
                 <img src={i.snippet.thumbnails.high.url} />
                 <div>
-                    <h3>{i.snippet.title.substring(0, 60) + (i.snippet.title.length > 60 ? '...' : '')}</h3>
+                    <h3>{i.snippet.title}</h3>
                     <p>{i.snippet.channelTitle}</p>
                     <p>{i.statistics.viewCount} views, {i.statistics.likeCount} likes</p>
                 </div>
