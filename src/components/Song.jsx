@@ -8,9 +8,8 @@ class Song extends React.Component{
             <div className='song'>
                 <img src={i.snippet.thumbnails.high.url} />
                 <div>
-                    <h3>{i.snippet.title}</h3>
-                    <p>{i.snippet.channelTitle}</p>
-                    <p>{i.statistics.viewCount} views, {i.statistics.likeCount} likes</p>
+                    <h3>{i.snippet.title.replace('&#39;', '\'')}</h3>
+                    <p>{i.snippet.channelTitle.replace('&#39;', '\'')}</p>
                 </div>
             </div>
         )
