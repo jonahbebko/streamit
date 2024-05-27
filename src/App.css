@@ -97,9 +97,7 @@
   animation: rainbow 20s infinite;
   -webkit-animation: rainbow 20s infinite;
   -moz-animation: rainbow 20s infinite;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: center;
+  text-align: left;
 }
 
 p {
