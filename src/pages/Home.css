@@ -3,7 +3,7 @@
     text-align: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 30px;
+    margin: 30px;
     gap: 20px;
 }
 
