@@ -10,12 +10,12 @@ class Song extends React.Component{
                 <div>
                     <h3>{i.snippet.title
                                     .replace('&#39;', '\'')
-                                    .replace('&quot;', '"')
+                                    .replace('&quot;', '\'')
                                     .replace('&amp;', '&')
                         }</h3>
                     <p>{i.snippet.channelTitle
                                     .replace('&#39;', '\'')
-                                    .replace('&quot;', '"')
+                                    .replace('&quot;', '\'')
                                     .replace('&amp;', '&')
                         }</p>
                 </div>
