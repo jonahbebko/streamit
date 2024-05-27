@@ -9,7 +9,7 @@
 
 .App-header {
   display: flex;
-  width: 22vw;
+  min-width: 260px;
   flex-direction: column;
   justify-content: space-between;
 }
