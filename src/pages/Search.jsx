@@ -35,8 +35,8 @@ class Search extends React.Component {
                     <button id='song-submit-button' className='song-submit-button' onClick={this.onSearchSubmit}>submit</button>
                 </div>
                 <div className='song-list'>
-                    {this.state.songs.map((song) => {
-                        return <Song info={song} />
+                    {this.state.songs.map((song, index) => {
+                        return <Song info={song} id={index} />
                     })}
                 </div>
             </div>

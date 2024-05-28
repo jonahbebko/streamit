@@ -4,8 +4,12 @@ import './Song.css';
 class Song extends React.Component{
     render(){
         const i = this.props.info;
+        const id = this.props.id;
         return(
-            <div className='song'>
+            <div className='song' id={'song-'+id}>
+                <h3>
+                    {id+1}
+                </h3>
                 <img src={i.snippet.thumbnails.high.url} />
                 <div>
                     <h3>{i.snippet.title

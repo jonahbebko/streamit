@@ -19,6 +19,11 @@
     text-align: left;
 }
 
+.song > h3 {
+    margin: 0 15px 0 10px;
+    font-size: 12px;
+}
+
 .song > img {
     object-fit: cover;
     height: 40px;
