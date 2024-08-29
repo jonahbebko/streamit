@@ -81,6 +81,13 @@ export default defineConfig({
           options: {
             cacheName: 'audio',
           },
+        },
+        {
+          urlPattern: /https:\/\/fonts\.googleapis\.com\/\*/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'material-symbols-cache',
+          }
         }
       ],
     },
