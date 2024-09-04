@@ -8,6 +8,11 @@
     gap: 20px;
 }
 
+.Welcome > p {
+    max-width: 50vw;
+    text-wrap: wrap;
+}
+
 h1 {
     margin: 0;
 }
