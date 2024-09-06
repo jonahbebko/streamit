@@ -1,0 +1,12 @@
+.player-title {
+    margin: 10px 0;
+}
+
+.player-title > h3 {
+    margin: 0;
+}
+
+.player-title > p {
+    margin: 0;
+    color: rgb(167, 167, 167);
+}
