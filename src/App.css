@@ -9,9 +9,9 @@
 
 .App-header {
   display: flex;
-  min-width: 260px;
   flex-direction: column;
   justify-content: space-between;
+  min-width: max(250px, 16vw);
 }
 
 .App-header-top {
@@ -32,7 +32,7 @@
 
 .App-header-top > img {
   position: absolute;
-  left: 23px;
+  left: calc(50% - 100px);
   margin: 0;
   width: 60px;
   height: 60px;
@@ -43,7 +43,7 @@
 
 .App-header-top > h1 {
   position: absolute;
-  left: 88px;
+  left: calc(50% - 35px);
   top: 18px;
   margin: 0 10px 0 0;
   font-size: 26px;
@@ -51,7 +51,7 @@
 
 .App-header-top > p {
   position: absolute;
-  left: 88px;
+  left: calc(50% - 35px);
   bottom: 18px;
   margin: 0;
   font-size: 14px;
@@ -63,15 +63,22 @@
   margin: 10px 5px 15px 15px;
   padding: 15px;
   align-items: flex-start;
-  justify-content: stretch;
+  justify-content: space-between;
   flex-grow: 1;
   text-wrap: wrap;
   border-radius: 20px;
   background-color: rgb(18, 21, 26);
 }
 
-.App-header-bottom > button {
-  display: inline-flex;
+.App-header-button-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.App-header-bottom-buttons > button {
+  display: flex;
   align-items: center;
   width: 100%;
   justify-content: left;
@@ -83,6 +90,17 @@
   font-weight: 500;
   background-color: transparent;
   color: rgb(167, 167, 167);
+}
+
+.App-header-player {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  align-self: stretch;
+  background-color: rgb(18, 21, 26);
 }
 
 .App-body {
