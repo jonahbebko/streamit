@@ -6,6 +6,7 @@ import Welcome from './pages/Welcome'
 import Home from './pages/Home'
 import Search from './pages/Search'
 import Settings from './pages/Settings'
+import Player from './components/Player'
 
 function App() {
 
@@ -61,18 +62,23 @@ function App() {
             <p>pre-alpha 0.1.0</p>
           </div>
           <div className='App-header-bottom'>
-            <button className='Banner-Home' style={{color: home ? 'white' : 'grey'}} onClick={rsetHome}>
-              <span class='material-symbols-outlined'>home</span>
-              <p>home</p>
-            </button>
-            <button className='Banner-Search' style={{color: search ? 'white' : 'grey'}} onClick={rsetSearch}>
-              <span class='material-symbols-outlined'>search</span>
-              <p>search</p>
-            </button>
-            <button className='Banner-Settings' style={{color: settings ? 'white' : 'grey'}} onClick={rsetSettings}>
-              <span class='material-symbols-outlined'>settings</span>
-              <p>settings</p>
-            </button>
+            <div className='App-header-bottom-buttons'>
+              <button className='Banner-Home' style={{color: home ? 'white' : 'grey'}} onClick={rsetHome}>
+                <span class='material-symbols-outlined'>home</span>
+                <p>home</p>
+              </button>
+              <button className='Banner-Search' style={{color: search ? 'white' : 'grey'}} onClick={rsetSearch}>
+                <span class='material-symbols-outlined'>search</span>
+                <p>search</p>
+              </button>
+              <button className='Banner-Settings' style={{color: settings ? 'white' : 'grey'}} onClick={rsetSettings}>
+                <span class='material-symbols-outlined'>settings</span>
+                <p>settings</p>
+              </button>
+            </div>
+            <div className='App-header-player'>
+              <Player />
+            </div>
           </div>
         </div>
         <div className='App-body'>
