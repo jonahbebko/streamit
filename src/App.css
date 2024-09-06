@@ -11,7 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: max(250px, 16vw);
+  min-width: 250px;
+  width: max(250px, 16vw);
 }
 
 .App-header-top {
@@ -116,6 +117,7 @@
   -webkit-animation: rainbow 20s infinite;
   -moz-animation: rainbow 20s infinite;
   text-align: left;
+  min-width: 400px;
 }
 
 p {
