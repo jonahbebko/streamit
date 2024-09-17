@@ -18,15 +18,13 @@
 .App-header-top {
   display: flex;
   position: relative;
-  left: 5px;
   top: 5px;
-  margin: 10px 0 5px 15px;
+  margin: 10px 5px 10px 10px;
   height: 85px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-  margin: 10px;
   border-radius: 20px;
   background-color: rgb(18, 21, 26);
 }
@@ -61,7 +59,7 @@
 .App-header-bottom {
   display: flex;
   flex-direction: column;
-  margin: 10px 5px 15px 15px;
+  margin: 10px 5px 15px 10px;
   padding: 15px;
   align-items: flex-start;
   justify-content: space-between;
