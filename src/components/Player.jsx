@@ -1,22 +1,40 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 import './Player.css';
 
 class Player extends React.Component{
     render() {
+        //const thumbnail = this.props.thumbnail;
+        const thumbnail = 'logot512.png';
+        const title = this.props.title;
+        const artist = this.props.artist;
+        const url = this.props.url;
+
+        const prev = () => {
+            return null;
+        }
+
+        const play = () => {
+            return null;
+        }
+
+        const next = () => {
+            return null;
+        }
+
         return(
-            <div id='player'>
-                <div id='player-info'>
-                    <img id='player-thumbnail' src={this.props.thumbnail} />
-                    <div id='player-title'>
-                        <h3>{this.props.title}</h3>
-                        <p>{this.props.artist}</p>
+            <div className='Player'>
+                <div className='Player-info'>
+                    <img className='Player-thumbnail' src={thumbnail} />
+                    <div className='Player-title'>
+                        <h3>{title}</h3>
+                        <p>{artist}</p>
                     </div>
                 </div>
-                <div id='player-controls'>
-                    <button id='player-prev' onClick={this.props.prev}>prev</button>
-                    <button id='player-play' onClick={this.props.play}>play</button>
-                    <button id='player-next' onClick={this.props.next}>next</button>
+                <div className='Player-controls'>
+                    <button className='Player-prev' onClick={prev}>prev</button>
+                    <button className='Player-play' onClick={play}>play</button>
+                    <button className='Player-next' onClick={next}>next</button>
                 </div>
             </div>
         )
