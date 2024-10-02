@@ -1,12 +1,30 @@
-.player-title {
+.Player-title {
     margin: 10px 0;
 }
 
-.player-title > h3 {
+.Player-title > h3 {
     margin: 0;
 }
 
-.player-title > p {
+.Player-title > p {
     margin: 0;
     color: rgb(167, 167, 167);
+}
+
+.Player-controls {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.Player-controls > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.Player-thumbnail {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 30, 40);
+    border-radius: 20px;
 }
