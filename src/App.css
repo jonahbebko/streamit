@@ -69,17 +69,15 @@
   background-color: rgb(18, 21, 26);
 }
 
-.App-header-button-buttons {
+.App-header-bottom-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .App-header-bottom-buttons > button {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: left;
   flex-direction: row;
   padding: 12px;
@@ -91,13 +89,16 @@
   color: rgb(167, 167, 167);
 }
 
+.App-header-bottom-buttons > button > p {
+  position: relative;
+  bottom: 1px;
+}
+
 .App-header-player {
   display: flex;
   flex-direction: column;
   flex-grow: 0;
   gap: 10px;
-  padding: 15px;
-  border-radius: 20px;
   align-self: stretch;
   background-color: rgb(18, 21, 26);
 }
