@@ -72,7 +72,7 @@ function App() {
                 <p>search</p>
               </button>
               <button className='Banner-Settings' style={{color: settings ? 'white' : 'grey'}} onClick={rsetSettings}>
-                <span class='material-symbols-outlined'>settings</span>
+                <span className='material-symbols-outlined'>settings</span>
                 <p>settings</p>
               </button>
             </div>
